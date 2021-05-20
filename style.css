@@ -3,17 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.box1{
-    background-color: lightcoral;
-}
-.box2{
-    background-color: lightblue;
-}
-.box3{
-    background-color: lightgreen;
-}
-main{
+.gallery{
     display: grid;
-    grid-template-columns: 300px 300px;
-
+    grid-template-columns: repeat(auto-fill,minmax(400px ,1fr));
+    grid-column-gap: 20px;
+    grid-row-gap:20px;
+}
+.gallery img{
+    width: 100%;
 }
